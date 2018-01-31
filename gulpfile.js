@@ -1,5 +1,8 @@
 const gulp = require('gulp')
 
-gulp.task('hello', function() {
-  console.log('hello wolrd!')
+gulp.task('html', () => {
+  gulp.src('./src/**/*.html')
+    .pipe(gulp.dest('./build'))
 })
+
+gulp.task('default', ['html'])

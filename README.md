@@ -1,7 +1,7 @@
 # initialize
 npm init
 
-# gulp
+# gulp initialize
 install to global
 ```
 $ npm install -g gulp
@@ -19,3 +19,6 @@ when you set the name 'default' you can run only by
 ```
 $ gulp
 ```
+
+# to build
+change gulpfile.js  

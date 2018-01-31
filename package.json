@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "author": "Satoru Osawa",
   "license": "UNLICENSED",

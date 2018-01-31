@@ -22,13 +22,33 @@ gulp.task('clean', () => {
 
 // Build
 
-gulp.task('html', () => {
+gulp.task('build:html', () => {
   gulp.src('./src/**/*.html')
     .pipe(gulp.dest('./build'))
 })
 
-gulp.task('default', gulpSequence(
+gulp.task('build:js', () => {
+  gulp.src('./src/**/*.js')
+    .pipe(gulp.dest('./build'))
+})
+
+gulp.task('build:css', () => {
+  gulp.src('./src/**/*.css')
+    .pipe(gulp.dest('./build'))
+})
+
+// Tasks
+
+gulp.task('build', gulpSequence(
   'clean',
-  'html',
+  [
+    'build:html',
+    'build:js',
+    'build:css',
+  ]
+))
+
+gulp.task('start', gulpSequence(
+  'build',
   'browser-sync',
 ))

@@ -30,13 +30,13 @@ gulp.task('build:html', () => {
 
 gulp.task('build:js', () => {
   gulp.src('./src/js/**/*.js')
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./build/js'))
     .pipe(browserSync.stream())
 })
 
 gulp.task('build:css', () => {
   gulp.src('./src/css/**/*.css')
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream())
 })
 

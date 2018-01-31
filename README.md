@@ -1,7 +1,28 @@
-# initialize
+# usage
+run
+```
+$ npm (run) start
+```
+or
+```
+$ npm (run) start
+```
+
+only build
+```
+$ npm run build
+```
+
+lint
+```
+$ npm run lint
+```
+
+# log
+## initialize
 npm init
 
-# gulp initialize
+## gulp initialize
 install to global
 ```
 $ npm install -g gulp
@@ -20,5 +41,8 @@ when you set the name 'default' you can run only by
 $ gulp
 ```
 
-# to build
+### to build using gulp
 change gulpfile.js  
+
+## eslint
+you can customize style to edit .eslint.json file
